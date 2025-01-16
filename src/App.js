@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { Routes, Route, NavLink, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, NavLink, useLocation } from 'react-router-dom';
 import FadeIn from 'react-fade-in';
 
 // Current Pages
@@ -19,40 +19,41 @@ function App() {
       <Header />
       <Routes>
         <Route
-          path="/"
+          path="/home"
           element={
-            // Fade In Transition & Page Name
             <FadeIn key={location.pathname + '-home'} transitionDuration={600}> 
               <HomePage />
             </FadeIn>
           }
         />
         <Route
-          path="/about"
+          path="/home/about"
           element={
-            // Fade In Transition & Page Name
             <FadeIn key={location.pathname + '-about'} transitionDuration={600}>
               <AboutPage />
             </FadeIn>
           }
         />
         <Route
-          path="/projects"
+          path="/home/projects"
           element={
-            // Fade In Transition & Page Name
             <FadeIn key={location.pathname + '-projects'} transitionDuration={600}>
               <ProjectsPage />
             </FadeIn>
           }
         />
         <Route
-          path="/research"
+          path="/home/research"
           element={
-            // Fade In Transition & Page Name
             <FadeIn key={location.pathname + '-research'} transitionDuration={600}>
               <ResearchPage />
             </FadeIn>
           }
+        />
+        {/* Optional: Redirect root to /home */}
+        <Route
+          path="/"
+          element={<HomePage />}
         />
       </Routes>
       <Footer />
@@ -72,7 +73,7 @@ function Header() {
         <ul>
           <li>
             <NavLink 
-              to="/" 
+              to="/home" 
               end
               className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
             >
@@ -81,7 +82,7 @@ function Header() {
           </li>
           <li>
             <NavLink 
-              to="/About"
+              to="/home/about"
               className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
             >
               About Me
@@ -89,7 +90,7 @@ function Header() {
           </li>
           <li>
             <NavLink 
-              to="/Projects"
+              to="/home/projects"
               className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
             >
               Projects
@@ -97,7 +98,7 @@ function Header() {
           </li>
           <li>
             <NavLink 
-              to="/Research"
+              to="/home/research"
               className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
             >
               Research
