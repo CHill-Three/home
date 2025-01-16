@@ -1,0 +1,64 @@
+/* For Projects Page */
+.nav-article {
+    position: relative;
+    margin-left: 1.5rem; /* Space on the Left Side */
+    padding-bottom: 0rem;
+  }
+  
+  /* The Vertical Line */
+  .nav-article::before {
+    content: "";
+    position: absolute;
+    top: 0rem;  /* Start Below Main Heading */
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: #ccc;
+  }
+  
+  .nav-article h3 {
+    margin: 0 0 3rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Vertical List */
+  .nav-article ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-article li {
+    margin-bottom: 1rem;
+  }
+  
+  /* Use <button> or <a> for each link */
+  .nav-article button,
+  .nav-article a {
+    text-decoration: none;
+    color: #1f1f1f;
+    display: inline-block; /* Ensure vertical stacking in the list */
+    background: none;      /* Remove default button background */
+    border: none;          /* Remove default button border */
+    padding: 0.25rem 0.75rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;       /* Show pointer on hover */
+    text-align: left;      /* Text doesn't center inside the button */
+  }
+  
+  /* Pink highlight for active link */
+  .nav-article .active {
+    position: relative;
+    background-color: #c5f3ff;  /* Light Blue background */
+    border-radius: 4px 4px 4px 4px;   /* Round Corners */
+    padding: 0.25rem 0.75rem;
+    border-left: 3px solid #143864; /* 143864 */
+    border-radius: 0px 4px 4px 0px;   /* Round Corners / Hard Corners for Accent */
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    margin-left: 0rem;        /* Overlap the Vertical Line */
+  }
+
+  

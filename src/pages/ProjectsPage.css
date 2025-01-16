@@ -1,0 +1,76 @@
+/* src/pages/ProjectsPage.css */
+
+/* Container for the entire Projects Page */
+.projects-page-container {
+  display: flex;
+  min-height: 100vh;
+  background: #e8feff;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: sticky;
+  top: 3rem; /* Retained Original Top Offset */
+  align-self: flex-start;
+  margin-right: 2rem; /* Retained Original Margin */
+  height: fit-content;
+  width: 220px; /* Adjusted width based on Original Padding-Left */
+}
+
+/* Main Content Styles */
+.projects-page {
+    flex: 1;
+    padding: 3rem 2rem;
+    background: #e8feff;
+    text-align: center;
+  }
+  
+  .projects-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .projects-page h3 {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  .projects-page h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .projects-page p {
+    margin: 1rem auto;
+    max-width: 700px;
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  .projects-page blockquote {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #555;
+    font-style: italic;
+  }
+
+/* Container for Images */
+  .section-images {
+    display: flex;
+    justify-content: center; /* Centers Images Horizontally */
+    align-items: center;     /* Centers Images Vertically */
+    gap: 1rem;               /* Optional: Space between Images */
+    margin-top: 1rem;        /* Optional: Space above the Images */
+}
+
+  /* Responsive Image Styling */
+  .responsive-image {
+    max-width: 80%;
+    height: auto;
+  }
+  
