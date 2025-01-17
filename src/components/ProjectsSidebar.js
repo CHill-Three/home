@@ -12,7 +12,7 @@ function ProjectsSidebar() {
     { id: 'The CCA Tool', label: 'The CCA Tool' },
     { id: 'Single-Stage RF Amplifiers', label: 'Single-Stage RF Amplifiers' },
     { id: 'Full-Wave Bridge Rectifier PCB Design', label: 'Full-Wave Bridge Rectifier PCB Design' },
-    { id: 'FPGA Moore Designed FSM', label: 'FPGA Moore Designed FSM' },
+    { id: 'FPGA Mealy Designed FSM', label: 'FPGA Mealy Designed FSM' },
   ];
 
   // Handler to update active section on click

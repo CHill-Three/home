@@ -464,7 +464,7 @@ function ProjectsPage() {
 
                 </section>
 
-                <section id="FPGA Moore Designed FSM" style={{ marginBottom: '10rem' }}>
+                <section id="FPGA Mealy Designed FSM" style={{ marginBottom: '10rem' }}>
                     {/* Title */}
                     <h3>FPGA Moore Designed Finite State Machine | Xilinx Vivado (Artix-7 FPGA Family), Verilog</h3>
                     {/* Image Gallery */}
